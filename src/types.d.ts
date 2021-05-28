@@ -13,7 +13,20 @@ interface Review {
   productId: string;
 }
 
+interface UserInputs {
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+}
+
+interface UserLogin {
+  email: string;
+  password: string;
+}
+
 interface User {
-  id: string;
-  username: string;
+  uid: string;
+  email: string;
+  displayName: string;
 }
