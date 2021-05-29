@@ -27,7 +27,7 @@ const Header: React.FC = () => {
     <AppBar position='static' className={classes.root}>
       <Toolbar>
         <Typography variant='h6' className={classes.title}>
-          Recomendation network
+          <Button component={NavLink} to='/' color='inherit'>Recomendation network</Button>
         </Typography>
         {!auth.authorized && <Button component={NavLink} to='/login' color='inherit'>Login</Button>}
         {!auth.authorized && <Button component={NavLink} to='/signup' color='inherit'>Sign Up</Button>}

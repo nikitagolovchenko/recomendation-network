@@ -6,11 +6,12 @@ interface Product {
 }
 
 interface Review {
-  id: string;
+  id?: string;
   rate: number;
   text: string;
   userId: string;
   productId: string;
+  createdAt: string;
 }
 
 interface UserInputs {

@@ -12,11 +12,11 @@ const Layout: React.FC<LayoutProps> = ({ children, container = 'md' }) => {
       <CssBaseline />
       <Header />
 
-      <main>
+      <Box component='main' pb={5}>
         <Container maxWidth={container}>
           <>{children}</>
         </Container>
-      </main>
+      </Box>
     </Box>
   );
 };
