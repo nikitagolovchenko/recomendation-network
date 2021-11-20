@@ -36,7 +36,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path='/' exact component={HomePage} />
         <Route path='/product/:id' exact component={ProductPage} />
